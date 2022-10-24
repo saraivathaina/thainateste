@@ -3,9 +3,10 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/thainateste"
   },
-  "version": "0.4.7",
+  "version": "0.4.17",
   "description": "A simple template for a custom React component library",
   "scripts": {
+    "start": "react-scripts start",
     "rollup": "rollup -c",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
@@ -53,5 +54,20 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
